@@ -1,3 +1,7 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +40,586 @@
     transform: rotate(360deg);
   }
 }
+
+/* Sidebar css start */
+.logo {
+  background-color: #2c1f53;
+  border: none;
+}
+
+.logo-img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  margin: 20px;
+}
+
+#components-layout-demo-side .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+/* Sidebar css end */
+
+/* .ant-layout{
+  background-color: #2C1F53 !important;
+} */
+
+.site-layout-background {
+  background-color: #2c1f53 !important;
+  padding: 0 !important;
+}
+
+.ant-layout-header {
+  background-color: #261b48 !important;
+  height: 80px !important;
+}
+
+.ant-layout-sider-trigger {
+  background-color: #2c1f53 !important;
+  /* display: none; */
+}
+
+.header-btn {
+  padding: 0px 30px;
+}
+
+/* .ant-layout-content{
+  margin: 0 !important;
+} */
+
+/* maingrid css start */
+.maingrid-button {
+  margin-top: 20px;
+  padding: 14px 30px;
+  border-radius: 10px;
+  /* border: 1px solid #F9A802; */
+  background-color: #f9a802;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.maingrid-button:hover {
+  color: #f9a802;
+  background-color: #fff;
+  transition: all 550ms ease-in-out;
+}
+
+.maingrid-img {
+  /* width:500px; */
+  height: 500px;
+  object-fit: contain;
+  width: 100%;
+}
+
+/* maingrid css end */
+
+/* second-grid css start */
+.second-grid {
+  margin: 20px 0 80px 0;
+}
+
+.second-grid-text {
+  color: #fff;
+  margin: 80px 40px;
+}
+
+.grid-para {
+  color: #fff !important;
+  height: 90px;
+}
+
+/* second-grid css end */
+
+/* checklist css start */
+.checklist-section {
+  background-color: #2c1f53;
+  /* padding: 20px 70px; */
+}
+/* checklist css end */
+
+/* sales promotion css start*/
+.sales-promotion {
+  background-color: #2c1f53;
+  padding: 100px 0;
+  /* padding: 20px 70px; */
+}
+
+.sales-box {
+  background-color: #3f2d74;
+  width: 291px;
+  height: 291px;
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  /* padding: 0 0 40px 0; */
+}
+
+.sales-box:hover {
+  background-color: #1f44ab;
+  transition: all 1s ease;
+}
+
+.sales-inner-box {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  background: rgba(0, 117, 255, 0.3);
+  margin: -10px 30px 50px 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+/* sales promotion css end*/
+
+/* algorithm css start */
+.algorithm-section {
+  background-color: #2c1f53;
+  /* padding: 20px 70px; */
+}
+/* algorithm css end */
+
+/* footer start */
+.footer-links li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.footer-links a {
+  color: #2c1f53;
+}
+
+.ant-layout-footer {
+  background-color: #fff !important;
+}
+/* footer end */
+
+/* ques comp start */
+
+.ques-comp {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px 100px;
+}
+
+.ques-heading {
+  margin: 20px 200px;
+  text-align: center;
+  color: #fff !important;
+  font-size: 58px !important;
+}
+
+.ques-para {
+  margin: 40px 0 40px 0 !important;
+  color: #fff !important;
+  text-align: center;
+  font-weight: normal !important;
+  font-size: 36px !important;
+}
+
+.ques-btn {
+  padding: 15px 50px;
+  margin: auto;
+  display: block;
+  border-radius: 10px;
+  border: none;
+  background-color: #f9a802;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ques-btn:hover {
+  background-color: #fff;
+  color: #f9a802;
+  transition: all 550ms ease-in-out;
+}
+/* ques comp end */
+
+/* third grid css start */
+
+.third-grid {
+  margin: 50px 0;
+}
+
+.titles {
+  margin-right: 50px;
+}
+
+.third-grid-title {
+  font-size: 50px !important;
+  color: #fff !important;
+}
+
+.third-grid-sub-title {
+  font-size: 24px;
+  font-weight: normal;
+  color: #fff !important;
+}
+
+.third-grid-img {
+  width: 650px;
+  height: 520px;
+  object-fit: contain;
+}
+/* third grid css end */
+
+/* banner class start */
+.banner-btn {
+  padding: 10px 30px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #f9a802;
+  color: #fff;
+}
+
+.banner-btn:hover {
+  background-color: #fff;
+  color: #f9a802;
+  transition: all 550ms ease-in-out;
+}
+/* banner class end */
+
+/* integrations css start */
+
+.integrations-heading {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 130px 300px;
+  text-align: center;
+}
+
+/* integrations css end */
+
+/* tab container css start */
+.tabs-container {
+  /* background: #261B48 !important; */
+}
+.tabs-container p {
+  margin: 0;
+}
+.tabs-container > .ant-tabs-card .ant-tabs-content {
+  height: 120px;
+  margin-top: -16px;
+}
+.tabs-container > .ant-tabs-card .ant-tabs-content > .ant-tabs-tabpane {
+  padding: 16px;
+  /* color: #fff; */
+  background: #fff;
+}
+.tabs-container > .ant-tabs-card > .ant-tabs-nav::before {
+  display: none !important;
+}
+.tabs-container > .ant-tabs-card .ant-tabs-tab,
+[data-theme="compact"] .tabs-container > .ant-tabs-card .ant-tabs-tab {
+  background: transparent !important;
+  border-color: transparent !important;
+}
+.tabs-container > .ant-tabs-card .ant-tabs-tab-active,
+[data-theme="compact"] .tabs-container > .ant-tabs-card .ant-tabs-tab-active {
+  background: #fff !important;
+  border-color: #fff !important;
+}
+#components-tabs-demo-card-top .code-box-demo {
+  padding: 24px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+[data-theme="compact"] .tabs-container > .ant-tabs-card .ant-tabs-content {
+  height: 120px;
+  margin-top: -8px;
+}
+[data-theme="dark"] .tabs-container > .ant-tabs-card .ant-tabs-tab {
+  background: transparent;
+  border-color: transparent;
+}
+[data-theme="dark"] #components-tabs-demo-card-top .code-box-demo {
+  background: #000;
+}
+[data-theme="dark"]
+  .tabs-container
+  > .ant-tabs-card
+  .ant-tabs-content
+  > .ant-tabs-tabpane {
+  background: #141414;
+  /* color: #fff; */
+}
+[data-theme="dark"] .tabs-container > .ant-tabs-card .ant-tabs-tab-active {
+  background: #141414;
+  border-color: #141414;
+}
+
+.ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab,
+.ant-tabs-card.ant-tabs-top > div > .ant-tabs-nav .ant-tabs-tab {
+  border-radius: 5px 5px 0 0 !important;
+}
+
+.ant-drawer-content {
+  border-radius: 20px 0 0 20px !important;
+}
+
+.ant-tabs-nav-wrap {
+  padding-top: 16px !important;
+  /* overflow: visible !important; */
+}
+
+.ant-tabs-content {
+  box-shadow: 0 -3px 8px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active {
+  box-shadow: 0 -3px 8px 0 rgba(0, 0, 0, 0.1) !important;
+}
+/* tab container css end */
+
+/* prepaid card section css start */
+/* maingrid css start */
+.section-button {
+  padding: 14px 30px;
+  border-radius: 10px;
+  /* border: 1px solid #F9A802; */
+  background-color: #f9a802;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.section-button:hover {
+  color: #f9a802;
+  background-color: #fff;
+  transition: all 550ms ease-in-out;
+}
+
+.section-three {
+  margin: 40px 0;
+}
+
+.section-three-heading {
+  color: #fff !important;
+  font-size: 64px !important;
+  text-align: center;
+}
+
+.section-three-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin: 20px;
+}
+
+.section-three-row {
+  padding: 50px 0;
+}
+
+.btn-one {
+  margin: 0 40px 0 0;
+  padding: 8px 34px;
+  font-size: 24px;
+  background-color: #f9a802;
+  color: #fff;
+  border-radius: 10px;
+  border: 4px solid #f9a802;
+  cursor: pointer;
+}
+
+.btn-one:hover {
+  color: #f9a802;
+  background-color: #fff !important;
+  transition: all 1s ease;
+  border: 4px solid #fff;
+}
+
+.btn-two {
+  margin: 0 40px 0 0;
+  padding: 8px 34px;
+  font-size: 24px;
+  background-color: #2c1f53;
+  color: #fff;
+  border-radius: 10px;
+  border: 4px solid #f9a802;
+  cursor: pointer;
+}
+
+.btn-two:hover {
+  color: #f9a802;
+  background-color: #fff;
+  transition: all 1s ease;
+}
+/* prepaid card section css end */
+
+/* customers layout css start */
+
+.comp-two {
+  padding: 20px 100px;
+}
+
+.comp-two-img {
+  width: 625px;
+  height: 495px;
+  object-fit: contain;
+}
+
+.text-box {
+  margin: 0px 60px;
+}
+
+.comp-two-text {
+  font-size: 50px;
+  line-height: normal;
+}
+
+.comp-two-sub-text {
+  font-size: 25px;
+  margin: 10px;
+  color: #261b48;
+}
+
+.comp-three-heading {
+  font-size: 64px;
+  font-weight: bold;
+  color: #fff !important;
+  padding: 20px 0;
+}
+
+.comp-three-card-heading {
+  font-size: 24px;
+}
+
+/* customers layout css end */
+
+/* pricing layout css start */
+
+.pricing-layout {
+  background-color: #2c1f53;
+  padding: 80px 100px 100px 100px;
+}
+
+.pricing-layout-heading {
+  color: #fff !important;
+  text-align: center;
+  font-size: 64px !important;
+}
+
+.pricing-box {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px 0;
+}
+
+.box-heading {
+  font-size: 36px;
+}
+
+/* .box-details{
+  height: 200px;
+} */
+
+.box-price {
+  font-size: 36px !important;
+  color: #3b34ab !important;
+  font-weight: normal !important;
+}
+
+.box-btn {
+  margin-top: 20px;
+  padding: 8px 30px;
+  background-color: #c3c0ee;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.box-btn:hover {
+  background-color: #3b34ab;
+  color: #fff;
+  transition: all 550s ease;
+}
+
+.box-list {
+  font-size: 18px;
+  margin: 20px 0;
+  padding: 10px 40px;
+  text-align: left;
+}
+
+/* pricing layout css end */
+
+/* tnc layout css start */
+.last-heading {
+  font-size: 72px !important;
+  color: #f9a802 !important;
+  text-align: center;
+  padding: 70px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* tnc layout css end */
+
+/* sidenav layout css start */
+
+.ant-layout-sider-children {
+  position: fixed;
+  width: 200px;
+}
+
+.sidenav_links {
+  cursor: pointer;
+}
+
+.sidenav_list {
+  list-style: none;
+  padding: 20px 30px;
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.list_icon {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sn-icons {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  margin: 10px 20px 10px 10px;
+}
+
+.sn-box-links {
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.user-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+/* sidenav layout css end */
+
+/* help support layout css start */
+.support-heading {
+  font-size: 72px !important;
+  color: #fff !important;
+  text-align: center;
+  padding: 20px 70px 30px 70px;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+}
+/* help support layout css end */
