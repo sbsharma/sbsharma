@@ -7,7 +7,7 @@ export default function SalesBox({ salesBoxText, salesBoxImg }) {
   return (
     <div className="sales-box">
       <div className="sales-inner-box">{salesBoxImg}</div>
-      <Title level={4} style={{color: '#fff'}}>{salesBoxText}</Title>
+      <Title level={4} style={{color: '#fff'}} className="sales-box-text">{salesBoxText}</Title>
     </div>
   );
 }

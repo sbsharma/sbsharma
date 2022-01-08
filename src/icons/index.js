@@ -4,7 +4,7 @@ const ICON = {
       <svg
         width="28"
         height="28"
-        style={{ marginRight: "14px", objectFit: "contain" }}
+        className="checklist-checks"
         viewBox="0 0 28 28"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -31,6 +31,7 @@ const ICON = {
       <svg
         width="156"
         height="38"
+        className="website-logo"
         viewBox="0 0 156 38"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

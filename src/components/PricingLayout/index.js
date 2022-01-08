@@ -16,7 +16,7 @@ export default function PricingLayout() {
       <br/>
       <div className="pricing-box">
         <Row justify="space-around" align="middle">
-          <Col xs={2} sm={4} md={6} lg={14} xl={6}>
+          <Col xs={24} sm={4} md={6} lg={6} xl={6}>
             <Title className="box-heading">Enterprise</Title>
             <Title level={5}>
               A custom plan for mission-
@@ -42,7 +42,7 @@ export default function PricingLayout() {
               <li>Enterprise account administration</li>
             </div>
           </Col>
-          <Col xs={2} sm={4} md={6} lg={14} xl={6}>
+          <Col xs={24} sm={4} md={6} lg={6} xl={6}>
             {" "}
             <Title>Professional</Title>
             <Title level={5}>
@@ -63,7 +63,7 @@ export default function PricingLayout() {
               <li>5,000 API calls/hour</li>
             </div>
           </Col>
-          <Col xs={2} sm={4} md={6} lg={14} xl={6}>
+          <Col xs={24} sm={4} md={6} lg={6} xl={6}>
             {" "}
             <Title>Growth</Title>
             <Title level={5}>
@@ -84,7 +84,7 @@ export default function PricingLayout() {
               <li>5,000 API calls/hour</li>
             </div>
           </Col>
-          <Col xs={2} sm={4} md={6} lg={14} xl={6}>
+          <Col xs={24} sm={4} md={6} lg={6} xl={6}>
             {" "}
             <Title>Startup</Title>
             <Title level={5}>

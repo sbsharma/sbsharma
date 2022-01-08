@@ -6,7 +6,7 @@ import SalesPromotion from "../SalesPromotion";
 import SecondGrid from "../SecondGrid";
 import ThirdGrid from "../ThirdGrid";
 
-export default function AnalyticsLayout() {
+export default function MarketersLayout() {
   return (
     <>
       <Banner />
@@ -19,93 +19,81 @@ export default function AnalyticsLayout() {
           <MainGrid
             heading={
               <>
-                Grab all
-                <span style={{ color: "#F9A802" }}> analytics</span> in one
-                place
+                One Software Made Personalization Of Campaign
+                <br /> Easy.
               </>
             }
             para={
               <>
-                Unlimited coupon customization. Build whatever you need,
-                <br /> whenever you need it
+                Flexible sales promotion software for every step of your <br />
+                customer's journey..
               </>
             }
             btnText={"Learn more"}
-            img={"/maingrid-img02.png"}
+            img={"/maingrid-img13.png"}
           />
           <br />
           <br />
           <SecondGrid
-            gridHeading={
-              <>
-                Make coupons more{" "}
-                <span style={{ color: "#F9A802" }}>special</span> with us
-              </>
-            }
-            gridImg1="/i.png"
+            gridHeading={<>Why marketers choose us</>}
+            gridImg1="/sg01.png"
             gridImg2="/ii.png"
-            gridImg3="/iii.png"
-            gridPara1={
-              <>
-                Personalized &<br /> targeted
-              </>
-            }
+            gridImg3="/sg03.png"
+            gridPara1={<>Developer free</>}
             gridSubPara1="Generate customer-, product-, order-specific coupons to attract and retain customers."
             gridPara2="Secured & trackable"
             gridSubPara2="Protect coupon ROI and budget with fraud-prevention mechanisms and in-depth tracking."
-            gridPara3="Ultimate discounting experience"
+            gridPara3="Promotions
+            that engage"
             gridSubPara3="Link codes to user profiles and create an omnichannel journey with trigger-based distribution and 20+ integrations."
           />
           <ThirdGrid
             title={
               <>
-                Personalize coupon with our{" "}
-                <span style={{ color: "#F9A802" }}>
-                  advanced marketing software
-                </span>
+                Build and personalize campaigns{" "}
+                <span style={{ color: "#F9A802" }}>on your own</span>
               </>
             }
             subTitle={
               <>
-                The possibilities are infinite. Create millions of customized
-                coupons by setting individual expiry dates and linking client
-                IDs to single coupons.
+                Personalize campaigns based on various factors to increase
+                performance, save budget with fine-grained targeting and turn
+                your customers into brand ambassadors.
               </>
             }
-            titleImg="/aa.png"
+            titleImg="/tg01.png"
           />
           <ThirdGrid
             reverse
             title={
               <>
-                <span style={{ color: "#F9A802" }}>Track & Analyse</span> your
-                coupons campaign
+                <span style={{ color: "#F9A802" }}>Omnichannel promotion</span>{" "}
+                solutions for your business
               </>
             }
             subTitle={
               <>
-                The possibilities are infinite. Create millions of customized
-                coupons by setting individual expiry dates and linking client
-                IDs to single coupons.
+                Gain full control through one centralized system to provide a
+                seamless customer experience.
               </>
             }
-            titleImg="/bb.png"
+            titleImg="/tg02.png"
           />
           <ThirdGrid
             title={
               <>
-                Distribute via
-                <span style={{ color: "#F9A802" }}> multiple channels</span>
+                Optimize promotional
+                <span style={{ color: "#F9A802" }}> ROI</span>
               </>
             }
             subTitle={
               <>
-                The possibilities are infinite. Create millions of customized
-                coupons by setting individual expiry dates and linking client
-                IDs to single coupons.
+                Give each shopper the minimum incentive needed to purchase,
+                while giving your business the optimum ROI without overspending
+                your marketing budget.
               </>
             }
-            titleImg="/cc.png"
+            titleImg="/tg03.png"
           />
         </div>
       </div>

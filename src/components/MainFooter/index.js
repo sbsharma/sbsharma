@@ -11,41 +11,41 @@ export default function MainFooter() {
     <div style={{paddingTop: '30px', paddingBottom: '30px'}}>
     <Footer style={{ textAlign: "center"}}>
       <Row>
-        <Col xs={4}>{ICON.websiteLogo()}</Col>
-        <Col xs={4} style={{ textAlign: "left", padding: "0 30px" }}>
+        <Col xs={8} sm={8} md={8} lg={4} xl={4}>{ICON.websiteLogo()}</Col>
+        <Col xs={8} sm={8} md={8} lg={4} xl={4} className="footer-links-box">
           <div className="footer-links">
             <Title level={5}>Features</Title>
 
             <li>
-              <a>Coupon software</a>
+              <a href="/coupons">Coupon software</a>
             </li>
             <li>
-              <a>Cart-level promotion software</a>
+              <a href="/cartlevel">Cart-level promotion software</a>
             </li>
             <li>
-              <a>Gift cards software</a>
+              <a href="/giftcards">Gift cards software</a>
             </li>
             <li>
-              <a>Product bundling</a>
+              <a href="/productbundling">Product bundling</a>
             </li>
             <li>
-              <a>Loyalty program software</a>
+              <a href="/loyalty">Loyalty program software</a>
             </li>
             <li>
-              <a>Referral program software</a>
+              <a  href="/referralprograms">Referral program software</a>
             </li>
             <li>
-              <a>Giveaways software</a>
+              <a href="/giveaway">Giveaways software</a>
             </li>
             <li>
-              <a>Digital wallets</a>
+              <a href="/digitalwallets">Digital wallets</a>
             </li>
             <li>
-              <a>Geofence promotions</a>
+              <a href="/geofencing">Geofence promotions</a>
             </li>
           </div>
         </Col>
-        <Col xs={4} style={{ textAlign: "left", padding: "0 30px" }}>
+        <Col xs={8} sm={8} md={8} lg={4} xl={4} className="footer-links-box">
           <div className="footer-links">
             <Title level={5}>Meribachat for...</Title>
 
@@ -63,7 +63,7 @@ export default function MainFooter() {
             </li>
           </div>
         </Col>
-        <Col xs={4} style={{ textAlign: "left", padding: "0 30px" }}>
+        <Col xs={8} sm={8} md={8} lg={4} xl={4} className="footer-links-box">
           <div className="footer-links">
             <Title level={5}>For Marketers</Title>
 
@@ -90,7 +90,7 @@ export default function MainFooter() {
             </li>
           </div>
         </Col>
-        <Col xs={4} style={{ textAlign: "left", padding: "0 30px" }}>
+        <Col xs={8} sm={8} md={8} lg={4} xl={4} className="footer-links-box">
           <div className="footer-links">
             <Title level={5}>For Developers</Title>
 
@@ -102,7 +102,7 @@ export default function MainFooter() {
             </li>
           </div>
         </Col>
-        <Col xs={4} style={{ textAlign: "left", padding: "0 30px" }}>
+        <Col xs={8} sm={8} md={8} lg={4} xl={4} className="footer-links-box">
           <div className="footer-links">
             <Title level={5}>Company</Title>
 

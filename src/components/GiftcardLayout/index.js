@@ -11,7 +11,7 @@ export default function GiftcardLayout() {
     <>
       <Banner />
       <FloatingButton />
-      <div style={{ padding: "120px 100px 20px 100px", backgroundColor: "#2C1F53" }}>
+      <div className="home-class">
         <div
           className="site-layout-background"
           style={{ padding: 24, minHeight: 360 }}
@@ -121,7 +121,7 @@ export default function GiftcardLayout() {
           quesBtn="Get Started"
         />
       </div>
-      <div style={{ padding: "20px 100px", backgroundColor: "#2C1F53" }}>
+      <div className="sales-promotion-class">
         <SalesPromotion
           header={
             <div style={{ textAlign: "center" }}>

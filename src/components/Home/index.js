@@ -9,11 +9,7 @@ export default function Home() {
       <Banner />
       <FloatingButton />
       <div
-        style={{
-          // margin: "105px 0",
-          padding: "120px 100px 20px 100px",
-          backgroundColor: "#2C1F53",
-        }}
+        className="home-class"
       >
         <MainLayout />
       </div>

@@ -1,4 +1,4 @@
-import { RightOutlined } from "@ant-design/icons";
+import { CloseOutlined, RightOutlined } from "@ant-design/icons";
 import { Col, Row, Typography } from "antd";
 import React, { useState } from "react";
 import MainFooter from "../MainFooter";
@@ -21,25 +21,23 @@ export default function FloatingButton() {
 
   const [show, setShow] = useState(false);
   const [menu, setMenu] = useState(false);
-  const [pricing, setPricing] = useState(false);
+  // const [pricing, setPricing] = useState(false);
 
   return (
     <>
       <div
-        style={{
-          background: "#2C1F53",
-          position: "absolute",
-          zIndex: "2", 
-          position: "fixed",
-          top: '105px'
-        }}
+        className="floating-button"
       >
         {/* <button className="logo" onClick={toggleCollapse}>
         <img src="/sidebar_logo.png" alt="sidebar" className="logo-img" />
       </button> */}
 
-        <button className="logo" onClick={() => setShow(true)}>
-          <img src="/sidebar_logo.png" alt="sidebar" className="logo-img" />
+        <button className="logo" onClick={() => setShow(show ? null : true)}>
+          <img
+            src={show ? "/close.png" : "/sidebar_logo.png"}
+            alt="sidebar"
+            className="logo-img"
+          />
         </button>
         {show ? (
           <div
@@ -50,7 +48,7 @@ export default function FloatingButton() {
             <div style={{ width: "215px", background: "#2C1F53" }}>
               <a
                 className="sidenav_links"
-                onClick={() => setMenu(true)}
+                onClick={() => setMenu(menu ? null : true)}
               >
                 <li className="sidenav_list">
                   Product <RightOutlined className="list_icon" />
@@ -95,8 +93,9 @@ export default function FloatingButton() {
       </div>
       {menu ? (
         <div
-        // id="menuDiv"
-        // style={{ display: "none" }}
+          // id="menuDiv"
+          // style={{ display: "none" }}
+          style={{ position: "fixed", zIndex: "5" }}
         >
           <div
             style={{
@@ -104,105 +103,155 @@ export default function FloatingButton() {
               background: "#fff",
               padding: "30px",
               width: "600px",
-              position: 'absolute',
-              zIndex: '3',
-              top: '220px',
-              left: '230px', 
-              
+              position: "absolute",
+              zIndex: "3",
+              top: "220px",
+              left: "230px",
             }}
           >
             <Row>
               <Col xs={2} sm={4} md={6} lg={14} xl={12}>
                 <a href="/coupons">
-                <div style={{ display: "flex", verticalAlign: "middle", cursor: 'pointer'}} href="/coupons">
-                  <img src="/sn01.png" alt="" className="sn-icons" />
-                  <Title level={5} className="sn-box-links">
-                    Personalised Coupons
-                  </Title>
-                </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      verticalAlign: "middle",
+                      cursor: "pointer",
+                    }}
+                    href="/coupons"
+                  >
+                    <img src="/sn01.png" alt="" className="sn-icons" />
+                    <Title level={5} className="sn-box-links">
+                      Personalised Coupons
+                    </Title>
+                  </div>
                 </a>
               </Col>
               <Col xs={2} sm={4} md={6} lg={14} xl={12}>
-              <a href="/loyalty">
-                <div style={{ display: "flex", verticalAlign: "middle", cursor: 'pointer' }}>
-                  <img src="/sn02.png" alt="" className="sn-icons" />
-                  <Title level={5} className="sn-box-links">
-                    Loyalty
-                  </Title>
-                </div>
-                </a>
-              </Col>
-            </Row>
-            <Row>
-              <Col xs={2} sm={4} md={6} lg={14} xl={12}>
-              <a href="/giftcards">
-                <div style={{ display: "flex", verticalAlign: "middle", cursor: 'pointer' }}>
-                  <img src="/sn03.png" alt="" className="sn-icons" />
-                  <Title level={5} className="sn-box-links">
-                    Gift Cards
-                  </Title>
-                </div>
-                </a>
-              </Col>
-              <Col xs={2} sm={4} md={6} lg={14} xl={12}>
-              <a href="/digitalwallets">
-                <div style={{ display: "flex", verticalAlign: "middle", cursor: 'pointer' }}>
-                  <img src="/sn04.png" alt="" className="sn-icons" />
-                  <Title level={5} className="sn-box-links">
-                    Digital Wallet
-                  </Title>
-                </div>
+                <a href="/loyalty">
+                  <div
+                    style={{
+                      display: "flex",
+                      verticalAlign: "middle",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <img src="/sn02.png" alt="" className="sn-icons" />
+                    <Title level={5} className="sn-box-links">
+                      Loyalty
+                    </Title>
+                  </div>
                 </a>
               </Col>
             </Row>
             <Row>
               <Col xs={2} sm={4} md={6} lg={14} xl={12}>
-              <a href="/geofencing">
-                <div style={{ display: "flex", verticalAlign: "middle", cursor: 'pointer' }}>
-                  <img src="/sn05.png" alt="" className="sn-icons" />
-                  <Title level={5} className="sn-box-links">
-                    Geo Fencing
-                  </Title>
-                </div>
+                <a href="/giftcards">
+                  <div
+                    style={{
+                      display: "flex",
+                      verticalAlign: "middle",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <img src="/sn03.png" alt="" className="sn-icons" />
+                    <Title level={5} className="sn-box-links">
+                      Gift Cards
+                    </Title>
+                  </div>
                 </a>
               </Col>
               <Col xs={2} sm={4} md={6} lg={14} xl={12}>
-              <a href="/referralprograms">
-                <div style={{ display: "flex", verticalAlign: "middle", cursor: 'pointer' }}>
-                  <img src="/sn06.png" alt="" className="sn-icons" />
-                  <Title level={5} className="sn-box-links">
-                    Referral Program
-                  </Title>
-                </div>
+                <a href="/digitalwallets">
+                  <div
+                    style={{
+                      display: "flex",
+                      verticalAlign: "middle",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <img src="/sn04.png" alt="" className="sn-icons" />
+                    <Title level={5} className="sn-box-links">
+                      Digital Wallet
+                    </Title>
+                  </div>
                 </a>
               </Col>
             </Row>
             <Row>
               <Col xs={2} sm={4} md={6} lg={14} xl={12}>
-              <a href="/analytics">
-                <div style={{ display: "flex", verticalAlign: "middle", cursor: 'pointer' }}>
-                  <img src="/sn07.png" alt="" className="sn-icons" />
-                  <Title level={5} className="sn-box-links">
-                    Analytics
-                  </Title>
-                </div></a>
+                <a href="/geofencing">
+                  <div
+                    style={{
+                      display: "flex",
+                      verticalAlign: "middle",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <img src="/sn05.png" alt="" className="sn-icons" />
+                    <Title level={5} className="sn-box-links">
+                      Geo Fencing
+                    </Title>
+                  </div>
+                </a>
               </Col>
               <Col xs={2} sm={4} md={6} lg={14} xl={12}>
-              <a href="/productbundling">
-                <div style={{ display: "flex", verticalAlign: "middle", cursor: 'pointer' }}>
-                  <img src="/sn08.png" alt="" className="sn-icons" />
-                  <Title level={5} className="sn-box-links">
-                    Product Bundling
-                  </Title>
-                </div></a>
+                <a href="/referralprograms">
+                  <div
+                    style={{
+                      display: "flex",
+                      verticalAlign: "middle",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <img src="/sn06.png" alt="" className="sn-icons" />
+                    <Title level={5} className="sn-box-links">
+                      Referral Program
+                    </Title>
+                  </div>
+                </a>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={2} sm={4} md={6} lg={14} xl={12}>
+                <a href="/analytics">
+                  <div
+                    style={{
+                      display: "flex",
+                      verticalAlign: "middle",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <img src="/sn07.png" alt="" className="sn-icons" />
+                    <Title level={5} className="sn-box-links">
+                      Analytics
+                    </Title>
+                  </div>
+                </a>
+              </Col>
+              <Col xs={2} sm={4} md={6} lg={14} xl={12}>
+                <a href="/productbundling">
+                  <div
+                    style={{
+                      display: "flex",
+                      verticalAlign: "middle",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <img src="/sn08.png" alt="" className="sn-icons" />
+                    <Title level={5} className="sn-box-links">
+                      Product Bundling
+                    </Title>
+                  </div>
+                </a>
               </Col>
             </Row>
           </div>
         </div>
       ) : null}
-      {pricing?
+      {/* {pricing?
       <PricingLayout /> &&
-      <MainFooter />:null}
+      <MainFooter />:null} */}
     </>
   );
 }

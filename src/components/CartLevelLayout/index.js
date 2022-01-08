@@ -11,7 +11,7 @@ export default function CartLevelLayout() {
     <>
       <Banner />
       <FloatingButton />
-      <div style={{ padding: "120px 100px 20px 100px", backgroundColor: "#2C1F53" }}>
+      <div className="home-class">
         <div
           className="site-layout-background"
           style={{ padding: 24, minHeight: 360 }}
@@ -32,8 +32,10 @@ export default function CartLevelLayout() {
             }
             para={
               <>
-                Meet the new standard for promotion marketing and apply<br/>
-                discounts automatically when customers meet promotion<br/>
+                Meet the new standard for promotion marketing and apply
+                <br />
+                discounts automatically when customers meet promotion
+                <br />
                 conditions.
               </>
             }
@@ -144,10 +146,18 @@ export default function CartLevelLayout() {
                 easy!
                 <br />
                 <br />
-                • Use dynamic price widgets to show customers how much they can save.<br />
-                • Offer automatic promotions to customers who abandoned their carts to incentivize them to finish the purchase.<br />
-                • Allow customers to stack and combine multiple promotion tiers and discounts.<br />
-                • Create clever product combinations to supercharge up-selling and cross-selling strategies.<br />
+                • Use dynamic price widgets to show customers how much they can
+                save.
+                <br />
+                • Offer automatic promotions to customers who abandoned their
+                carts to incentivize them to finish the purchase.
+                <br />
+                • Allow customers to stack and combine multiple promotion tiers
+                and discounts.
+                <br />
+                • Create clever product combinations to supercharge up-selling
+                and cross-selling strategies.
+                <br />
               </>
             }
             titleImg="/c3.png"
@@ -168,7 +178,7 @@ export default function CartLevelLayout() {
           quesBtn="Get Started"
         />
       </div>
-      <div style={{ padding: "20px 100pxpx ", backgroundColor: "#2C1F53" }}>
+      <div className="sales-promotion-class">
         <SalesPromotion
           header={
             <div style={{ textAlign: "center" }}>

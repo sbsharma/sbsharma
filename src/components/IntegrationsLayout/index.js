@@ -6,13 +6,18 @@ import QuesComp from "../QuesComp";
 import FloatingButton from "../FloatingButton";
 const { Title } = Typography;
 
-export default function IntegrationsLayout(){
-  return(
+export default function IntegrationsLayout() {
+  return (
     <>
       <Banner />
       <FloatingButton />
-      <div className="integrations-heading" style={{backgroundColor: '#2C1F53'}}>
-        <Title style={{fontSize: '55px', color: "#fff"}}>Supercharge your promotions with powerful integrations</Title>
+      <div
+        className="integrations-heading"
+        style={{ backgroundColor: "#2C1F53" }}
+      >
+        <Title className="integrations-heading-title">
+          Supercharge your promotions with powerful integrations
+        </Title>
       </div>
       <TabsContainer />
       <div style={{ backgroundColor: "#2C1F53" }}>
@@ -27,7 +32,7 @@ export default function IntegrationsLayout(){
           quesBtn="Get Started"
         />
       </div>
-      <div style={{ padding: "20px 100px", backgroundColor: "#2C1F53" }}>
+      <div className="sales-promotion-class">
         <SalesPromotion
           header={
             <div style={{ textAlign: "center" }}>
@@ -38,5 +43,5 @@ export default function IntegrationsLayout(){
         />
       </div>
     </>
-  )
+  );
 }

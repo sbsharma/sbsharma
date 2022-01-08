@@ -17,23 +17,23 @@ export default function SecondGrid({
   return (
     <>
       <div className="second-grid">
-        <Title style={{ color: "#fff", textAlign: "center" }}>
+        <Title style={{ color: "#fff", textAlign: "center" }} className="grid-heading">
           {gridHeading}
         </Title>
       </div>
       <Row>
-        <Col xl={8}>
+        <Col sm={24} xl={8}>
           <div style={{ textAlign: "center", objectFit: "contain" }}>
             <img
               src={gridImg1}
               alt=""
-              style={{ height: "100px", width: "100px" }}
+              className="second-grid-img"
             />
             <div className="second-grid-text">
               <Title level={2} className="grid-para">
                 {gridPara1}
               </Title>
-              <Title level={4} style={{ color: "#D9D0D0" }}>
+              <Title level={4} style={{ color: "#D9D0D0" }} className="grid-sub-para">
                 {gridSubPara1}
               </Title>
             </div>
@@ -44,13 +44,13 @@ export default function SecondGrid({
             <img
               src={gridImg2}
               alt=""
-              style={{ height: "100px", width: "100px" }}
+              className="second-grid-img"
             />
             <div className="second-grid-text">
               <Title level={2} className="grid-para">
                 {gridPara2}
               </Title>
-              <Title level={4} style={{ color: "#D9D0D0" }}>
+              <Title level={4} style={{ color: "#D9D0D0" }} className="grid-sub-para">
                 {gridSubPara2}
               </Title>
             </div>
@@ -61,13 +61,13 @@ export default function SecondGrid({
             <img
               src={gridImg3}
               alt=""
-              style={{ height: "100px", width: "100px" }}
+              className="second-grid-img"
             />
             <div className="second-grid-text">
               <Title level={2} className="grid-para">
                 {gridPara3}
               </Title>
-              <Title level={4} style={{ color: "#D9D0D0" }}>
+              <Title level={4} style={{ color: "#D9D0D0" }} className="grid-sub-para">
                 {gridSubPara3}
               </Title>
             </div>

@@ -12,9 +12,11 @@ export default function PrepaidCardLayout() {
     <>
       <Banner />
       <FloatingButton />
-      <div style={{ backgroundColor: "#2C1f53", padding: "120px 100px 20px 100px" }}>
+      <div className="home-class">
+      {/* <div style={{ backgroundColor: "#2C1f53", padding: "120px 100px 20px 100px" }}> */}
         <SectionOne />
-      </div>
+        </div>
+      {/* </div> */}
       <SectionTwo />
       <div style={{ backgroundColor: "#2C1f53", padding: "20px 100px" }}>
         <SectionThree />

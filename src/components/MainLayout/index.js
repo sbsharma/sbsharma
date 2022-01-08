@@ -7,6 +7,7 @@ import { Typography } from "antd";
 import SalesBox from "../SalesBox";
 import MainFooter from "../MainFooter";
 import Sidebar from "../Sidebar";
+import Carousel from "../Carousel";
 const { Title } = Typography;
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -68,9 +69,10 @@ export default function MainLayout() {
         </Content>
         <CheckList />
         <div style={{backgroundColor: '#2C1F53'}}>
-          <Title style={{color: '#fff', fontSize: '50px', margin: "100px 0 120px 0", fontWeight: 'normal'}}>Save your time & make your sales promotions successful with <span style={{color: '#F9A802'}}>MeriBachat</span></Title>
+          <Title className="algorithm-heading">Save your time & make your sales promotions successful with <span style={{color: '#F9A802'}}>MeriBachat</span></Title>
         </div>
         <Algorithm />
+        {/* <Carousel /> */}
         <SalesPromotion
           header={
             <>

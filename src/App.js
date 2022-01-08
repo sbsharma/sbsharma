@@ -34,6 +34,9 @@ import Carousel from "./components/Carousel";
 import FloatingButton from "./components/FloatingButton";
 import HelpSupportLayout from "./components/HelpSupportLayout";
 import Home from "./components/Home";
+import MarketersLayout from "./components/MarketersLayout";
+import ProductManagersLayout from "./components/ProductManagersLayout";
+import EnterpriseLayout from "./components/EnterpriseLayout";
 const { Header, Content, Footer, Sider } = Layout;
 
 const { Title } = Typography;
@@ -42,8 +45,7 @@ function App() {
   return (
     <>
       <Router>
-        
-          {/* <ul>
+        {/* <ul>
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -55,88 +57,99 @@ function App() {
             </li>
           </ul> */}
 
-          <Switch>
-            <Route path="/pricing">
-              <PricingLayout />
-              <MainFooter />
-            </Route>
-            <Route path="/coupons">
-              <CouponLayout />
-              <MainFooter />
-            </Route>
-            <Route path="/giftcards">
-              <GiftcardLayout />
-              <MainFooter />
-            </Route>
-            <Route path="/geofencing">
-              <GeofencingLayout />
-              <MainFooter />
-            </Route>
-            <Route path="/analytics">
-              <AnalyticsLayout />
-              <MainFooter />
-            </Route>
-            <Route path="/loyalty">
-              <LoyaltyLayout />
-              <MainFooter />
-            </Route>
-            <Route path="/digitalwallets">
-              <DigitalWalletsLayout />
-              <MainFooter />
-            </Route>
-            <Route path="/referralprograms">
-              <ReferralProgramLayout />
-              <MainFooter />
-            </Route>
-            <Route path="/productbundling">
-              <ProductBundling/>
-              <MainFooter />
-            </Route>
-            <Route path="/cartlevel">
-              <CartLevelLayout />
-              <MainFooter />
-            </Route>
-            <Route path="/giveaway">
-              <GiveawayLayout />
-              <MainFooter />
-            </Route>
-            <Route path="/integrations">
-              <IntegrationsLayout />
-              <MainFooter />
-            </Route>
-            <Route path="/prepaidcards">
-              <PrepaidCardLayout />
-              <MainFooter />
-            </Route>
-            <Route path="/customers">
-              <CustomersLayout />
-              <MainFooter />
-            </Route>
-            <Route path="/tnc">
-              <TnCLayout />
-              <MainFooter />
-            </Route>
-            <Route path="/privacy">
-              <PrivacyLayout />
-              <MainFooter />
-            </Route>
-            <Route path="/helpandsupport">
-              <HelpSupportLayout />
-              <MainFooter />
-            </Route>
-            <Route path="/topics">{/* <Topics /> */}</Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
-        
+        <Switch>
+          <Route path="/marketers">
+            <MarketersLayout />
+            <MainFooter />
+          </Route>
+          <Route path="/productmanagers">
+            <ProductManagersLayout />
+            <MainFooter />
+          </Route>
+          <Route path="/enterprise">
+            <EnterpriseLayout />
+            <MainFooter />
+          </Route>
+          <Route path="/pricing">
+            <PricingLayout />
+            <MainFooter />
+          </Route>
+          <Route path="/coupons">
+            <CouponLayout />
+            <MainFooter />
+          </Route>
+          <Route path="/giftcards">
+            <GiftcardLayout />
+            <MainFooter />
+          </Route>
+          <Route path="/geofencing">
+            <GeofencingLayout />
+            <MainFooter />
+          </Route>
+          <Route path="/analytics">
+            <AnalyticsLayout />
+            <MainFooter />
+          </Route>
+          <Route path="/loyalty">
+            <LoyaltyLayout />
+            <MainFooter />
+          </Route>
+          <Route path="/digitalwallets">
+            <DigitalWalletsLayout />
+            <MainFooter />
+          </Route>
+          <Route path="/referralprograms">
+            <ReferralProgramLayout />
+            <MainFooter />
+          </Route>
+          <Route path="/productbundling">
+            <ProductBundling />
+            <MainFooter />
+          </Route>
+          <Route path="/cartlevel">
+            <CartLevelLayout />
+            <MainFooter />
+          </Route>
+          <Route path="/giveaway">
+            <GiveawayLayout />
+            <MainFooter />
+          </Route>
+          <Route path="/integrations">
+            <IntegrationsLayout />
+            <MainFooter />
+          </Route>
+          <Route path="/prepaidcards">
+            <PrepaidCardLayout />
+            <MainFooter />
+          </Route>
+          <Route path="/customers">
+            <CustomersLayout />
+            <MainFooter />
+          </Route>
+          <Route path="/tnc">
+            <TnCLayout />
+            <MainFooter />
+          </Route>
+          <Route path="/privacy">
+            <PrivacyLayout />
+            <MainFooter />
+          </Route>
+          <Route path="/helpandsupport">
+            <HelpSupportLayout />
+            <MainFooter />
+          </Route>
+          <Route path="/topics">{/* <Topics /> */}</Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
       </Router>
       {/* <FloatingButton /> */}
       {/* <Carousel /> */}
       {/* <div style={{ display: "flex" }}> */}
-        {/* <Sidebar /> */}
-        {/* <div> */}
-          {/* <HelpSupportLayout />
+      {/* <Sidebar /> */}
+      {/* <div> */}
+      {/* <HelpSupportLayout />
           <MainFooter />
 
           <PrivacyLayout />
@@ -170,7 +183,7 @@ function App() {
           <MainFooter />
           <CouponLayout />
           <MainFooter /> */}
-          {/* <Banner />
+      {/* <Banner />
           <FloatingButton />
           <div
             style={{
@@ -179,7 +192,7 @@ function App() {
               backgroundColor: "#2C1F53",
             }}
           > */}
-            {/* <ThirdGrid
+      {/* <ThirdGrid
           title={
             <>
               Personalize coupon with our{" "}
@@ -216,10 +229,10 @@ function App() {
           }
           titleImg="/aa.png"
         /> */}
-            {/* <MainLayout /> */}
+      {/* <MainLayout /> */}
 
-            {/* <Algorithm /> */}
-            {/* <Divider orientation="left">Responsive</Divider>
+      {/* <Algorithm /> */}
+      {/* <Divider orientation="left">Responsive</Divider>
       <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
         <Col className="gutter-row" span={6}>
           <div>col-6</div>
@@ -234,10 +247,10 @@ function App() {
           <div>col-6</div>
         </Col>
       </Row> */}
-            {/* <Test /> */}
-            {/* <br /> */}
-            {/* <br /> */}
-            {/* <SecondGrid
+      {/* <Test /> */}
+      {/* <br /> */}
+      {/* <br /> */}
+      {/* <SecondGrid
           gridHeading={
             <>
               Make coupons more{" "}
@@ -258,17 +271,17 @@ function App() {
           gridPara3="Ultimate discounting experience"
           gridSubPara3="Link codes to user profiles and create an omnichannel journey with trigger-based distribution and 20+ integrations."
         /> */}
-          {/* </div> */}
-          {/* <MainFooter /> */}
-          {/* <div style={{ backgroundColor: "#2C1F53" }}>
+      {/* </div> */}
+      {/* <MainFooter /> */}
+      {/* <div style={{ backgroundColor: "#2C1F53" }}>
         <QuesComp
           ques="Are you burning money & wasting time on digital promotions?"
           quesPara="It’s time to change"
           quesBtn="Get Started"
         />
       </div> */}
-          {/* <MainFooter /> */}
-          {/* <Footer style={{ textAlign: "center" }}>
+      {/* <MainFooter /> */}
+      {/* <Footer style={{ textAlign: "center" }}>
         <Row>
           <Col xs={4}>{ICON.websiteLogo()}</Col>
           <Col xs={4} style={{ textAlign: "left", padding: "0 30px" }}>
@@ -384,7 +397,7 @@ function App() {
           </Col>
         </Row>
       </Footer> */}
-        {/* </div> */}
+      {/* </div> */}
       {/* </div> */}
     </>
   );
